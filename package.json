@@ -1,0 +1,28 @@
+{
+  "name": "note-app",
+  "version": "1.0.0",
+  "description": "note-taker",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolaoluwaadedeji/NoteTakingApplicationES5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jolaoluwaadedeji/NoteTakingApplicationES5/issues"
+  },
+  "homepage": "https://github.com/jolaoluwaadedeji/NoteTakingApplicationES5#readme"
+}

@@ -3,7 +3,7 @@
 
 		/** class constructor that instatiate an object**/
 
-			export.NotesApplication = function (author) {
+			var notesApplication = function (author) {
 				
 				if (typeof author === "string") {
 					this.author = author;
@@ -13,7 +13,7 @@
 					
 				else {
 
-					alert ('Input is not a string')
+					return 'Input is not a string';
 				    
 				    }
 			
@@ -137,3 +137,5 @@
   			}
   			
 	}	
+
+	module.exports=notesApplication;
