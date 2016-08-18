@@ -42,15 +42,16 @@
         	  this.listNotes = function () {
         	   		    
 
-        	   for (let i = 0; i < this.notes.length; i++) {
+        	   for (var i = 0; i < this.notes.length; i++) {
   				
-  					console.log (`NOTE ID: ${i} \n ${this.notes[i]}\n`);
+  				     
+					console.log (`NOTE ID: ${i} \n ${this.notes[i]}\n`);
   				    console.log (`\nBy Author:${this.author}\n`);
 
   					
-        			}
+        		}
 
-        	
+
         	}
         	
 			
