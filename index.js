@@ -86,9 +86,9 @@
 
   					if (this.notes[i].indexOf(search_text) >= 0) {
 
-  					  return("Showing results for search "+search_text+"\n"+" "+ "NOTEID:"+ i+"\n"+this.notes[i]+"By Author:"+this.author);
+						return "Showing results for search "+search_text+" "+" "+ "NOTE ID:"+ i+" "+this.notes[i]+" "+"By Author:"+this.author;
   				 	  
-  				 	   					 }
+  				 	   	}
 	  				
 	  			     }
 	  			
