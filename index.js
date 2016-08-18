@@ -31,7 +31,7 @@
 		     	 
 		       else {
 
-		         	alert ('Input is not a string')
+		         	return 'Input is not a string';
 			       
 			       }
 			}
@@ -68,7 +68,7 @@
           	
           	  else {
 
-          	       alert ('Input is not a number')
+          	       return 'Input is not a number'
 
           	       }
           	
@@ -96,7 +96,7 @@
   				
   			    else {
 
-  				     alert ('Input is not a string')	
+  				     return 'Input is not a string'	
   			        
   			         }
   			}
@@ -114,7 +114,7 @@
   				     
   				else {
 
-  				     alert ('Input not a number')
+  				     return 'Input not a number'
 
   				     }     
   			}	
@@ -130,7 +130,7 @@
   			 	
   			 	else {
 
-  			 		 alert ('Give the correct input')
+  			 		 return 'Give the correct input'
 
   			 		} 
   				

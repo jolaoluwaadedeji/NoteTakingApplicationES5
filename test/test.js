@@ -11,6 +11,17 @@ describe('Instance of class notesApplication',function(){
 		assert.equal(myNote.author,"Jola");
 		});
 
+
+describe ('function to add notes to an array of notes', function() {
+	it ('Should add notes to an array', function() {
+
+		 var myNote = new notesApp("Jola");
+		
+		 myNote.create("test");
+		 assert.equal(myNote.notes[0],"test");
+
+	});
+})
 	
 
 });
