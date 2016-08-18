@@ -3,7 +3,7 @@
 
 		/** class constructor that instatiate an object**/
 
-			export.NotesApplication = function (author) {
+			var notesApplication = function (author) {
 				
 				if (typeof author === "string") {
 					this.author = author;
@@ -13,7 +13,7 @@
 					
 				else {
 
-					alert ('Input is not a string')
+					return 'Input is not a string';
 				    
 				    }
 			
@@ -31,7 +31,7 @@
 		     	 
 		       else {
 
-		         	alert ('Input is not a string')
+		         	return 'Input is not a string';
 			       
 			       }
 			}
@@ -42,15 +42,16 @@
         	  this.listNotes = function () {
         	   		    
 
-        	   for (let i = 0; i < this.notes.length; i++) {
+        	   for (var i = 0; i < this.notes.length; i++) {
   				
-  					console.log (`NOTE ID: ${i} \n ${this.notes[i]}\n`);
+  				     
+					console.log (`NOTE ID: ${i} \n ${this.notes[i]}\n`);
   				    console.log (`\nBy Author:${this.author}\n`);
 
   					
-        			}
+        		}
 
-        	
+
         	}
         	
 			
@@ -68,7 +69,7 @@
           	
           	  else {
 
-          	       alert ('Input is not a number')
+          	       return 'Input is not a number'
 
           	       }
           	
@@ -86,9 +87,9 @@
 
   					if (this.notes[i].indexOf(search_text) >= 0) {
 
-  					  return("Showing results for search "+search_text+"\n"+" "+ "NOTEID:"+ i+"\n"+this.notes[i]+"By Author:"+this.author);
+						return "Showing results for search "+search_text+" "+" "+ "NOTE ID:"+ i+" "+this.notes[i]+" "+"By Author:"+this.author;
   				 	  
-  				 	   					 }
+  				 	   	}
 	  				
 	  			     }
 	  			
@@ -96,7 +97,7 @@
   				
   			    else {
 
-  				     alert ('Input is not a string')	
+  				     return 'Input is not a string'	
   			        
   			         }
   			}
@@ -114,7 +115,7 @@
   				     
   				else {
 
-  				     alert ('Input not a number')
+  				     return 'Input not a number'
 
   				     }     
   			}	
@@ -130,10 +131,12 @@
   			 	
   			 	else {
 
-  			 		 alert ('Give the correct input')
+  			 		 return 'Give the correct input'
 
   			 		} 
   				
   			}
   			
 	}	
+
+	module.exports=notesApplication;
