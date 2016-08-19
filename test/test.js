@@ -4,6 +4,7 @@ var notesApp=require('../');
 var chai=require('chai');
 var expect=chai.expect;
 var assert=chai.assert;
+
 //var assert=assert;
 describe('Instance of class notesApplication', function(){
 	
@@ -41,19 +42,49 @@ describe ('function to list out the notes', function () {
 
 		myNote.listNotes();
 		
+		assert(Array.isArray(myNote.notes) == true, 'variable is not an array');
 		
-
-		assert.equal(myNote.listNotes(),);
-
+		for (var i = 0; i < myNote.notes.length; i++) {
+			
 		
+		assert(typeof(myNote.notes[i]) == String,'values do not match');
+
+		}
+
      });
 
 
 });
 
-describe (
 
-	);
+describe ('function to get notes', function () {
+
+	it ('input Should be a number', function() {
+
+		var myNote = new notesApp("Jola");
+	
+		//myNote.getNote("1");
+
+		expect(myNote.getNote("1"), 'Input is not a number');
+	});
+
+});
+
+describe ('function to delete notes', function () {
+
+	it ('input Should be a number', function () {
+
+		var myNote = new notesApp("Jola");
+
+		expect(myNote.deleteNote("1"), 'Input not a number');
+
+	});
+
+
+
+}); 
+
+
 
 
 module.exports=notesApp;
