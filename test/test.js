@@ -35,15 +35,13 @@ describe ('function to add notes to an array of notes', function() {
 
 describe ('function to list out the notes', function () {
 	
-	it ('Should list out notes in the notes array', function() {
+	var myNote = new notesApp("Jola");	
 
-		var myNote = new notesApp("Jola");
-		
+	it ('Should list out notes in the notes array', function() {
 
 		myNote.listNotes();
 		
-		assert(Array.isArray(myNote.notes) == true, 'variable is not an array');
-		
+	
 		for (var i = 0; i < myNote.notes.length; i++) {
 			
 		
@@ -52,6 +50,15 @@ describe ('function to list out the notes', function () {
 		}
 
      });
+
+	it ('Should check if notes is an array', function() {
+
+		myNote.listNotes();
+		
+		assert(Array.isArray(myNote.notes) == true, 'variable is not an array');
+
+
+	});	
 
 
 });
@@ -80,10 +87,19 @@ describe ('function to delete notes', function () {
 
 	});
 
-
-
 }); 
 
+describe ('function to search notes', function () {
+
+	 it ('input Should be a String', function () {
+
+	 	 var myNote = new notesApp("Jola");
+
+	 	 expect (myNote.search(1), 'input not a String');
+
+	 }); 
+
+});
 
 
 
